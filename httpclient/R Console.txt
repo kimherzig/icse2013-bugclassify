@@ -1,0 +1,116 @@
+
+R version 2.14.1 (2011-12-22)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: i386-apple-darwin9.8.0/i386 (32-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.43 (5989) i386-apple-darwin9.8.0]
+
+> library(ggplot2)
+> t <- read.csv("/Users/kim/Projects/fixclassification/data/rhino/rhino_gen_factors.csv")
+> colnames(t)
+[1] "X"                "factor"           "MeanDecreaseGini"
+> p <- ggplot(t,factor(factor),MeanDecreaseGini)
+Error in unique.default(x) : unique() applies only to vectors
+> p <- ggplot(t,factor(factor),MeanDecreaseGini)
+Error in unique.default(x) : unique() applies only to vectors
+> factor(factor)
+Error in unique.default(x) : unique() applies only to vectors
+> factor(t$factor)
+  [1] MaxAge                                         NumParents_depth_3                             AvgLastModified                                MaxAge                                        
+  [5] NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                         AvgAge                                        
+  [9] NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                         avgParentChangeSize                           
+ [13] MaxAge                                         AvgAge                                         numChangeOperations                            MaxAge                                        
+ [17] NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+ [21] AvgAge                                         MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+ [25] MaxAge                                         AvgAge                                         avgParentChangeSize                            MaxAge                                        
+ [29] AvgAge                                         numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3    
+ [33] AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                        
+ [37] MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                        
+ [41] AvgAge                                         avgParentChangeSize                            MaxAge                                         AvgAge                                        
+ [45] numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                        
+ [49] MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                        
+ [53] AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                        
+ [57] avgParentChangeSize                            MaxAge                                         AvgAge                                         numChangeOperations                           
+ [61] MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                        
+ [65] NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                         AvgAge                                        
+ [69] NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                         avgParentChangeSize                           
+ [73] MaxAge                                         AvgAge                                         numChangeOperations                            MaxAge                                        
+ [77] NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+ [81] AvgAge                                         MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+ [85] MaxAge                                         AvgAge                                         avgParentChangeSize                            MaxAge                                        
+ [89] AvgAge                                         numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3    
+ [93] AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                        
+ [97] MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                        
+[101] AvgAge                                         avgParentChangeSize                            MaxAge                                         AvgAge                                        
+[105] numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                        
+[109] MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                        
+[113] AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                        
+[117] avgParentChangeSize                            MaxAge                                         AvgAge                                         numChangeOperations                           
+[121] MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                        
+[125] NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                         AvgAge                                        
+[129] NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                         avgParentChangeSize                           
+[133] MaxAge                                         AvgAge                                         numChangeOperations                            MaxAge                                        
+[137] NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+[141] AvgAge                                         MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+[145] MaxAge                                         AvgAge                                         avgParentChangeSize                            MaxAge                                        
+[149] AvgAge                                         numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3    
+[153] AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                        
+[157] MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                        
+[161] AvgAge                                         avgParentChangeSize                            MaxAge                                         AvgAge                                        
+[165] numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                        
+[169] MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                        
+[173] AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                        
+[177] avgParentChangeSize                            MaxAge                                         AvgAge                                         numChangeOperations                           
+[181] MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                        
+[185] NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                         AvgAge                                        
+[189] NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                         avgParentChangeSize                           
+[193] MaxAge                                         AvgAge                                         numChangeOperations                            MaxAge                                        
+[197] NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+[201] AvgAge                                         MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+[205] MaxAge                                         AvgAge                                         avgParentChangeSize                            MaxAge                                        
+[209] AvgAge                                         numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3    
+[213] AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                        
+[217] MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                        
+[221] AvgAge                                         avgParentChangeSize                            MaxAge                                         AvgAge                                        
+[225] numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                        
+[229] MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                        
+[233] AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                        
+[237] avgParentChangeSize                            MaxAge                                         AvgAge                                         numChangeOperations                           
+[241] MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                        
+[245] NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                         AvgAge                                        
+[249] NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                         avgParentChangeSize                           
+[253] MaxAge                                         AvgAge                                         numChangeOperations                            MaxAge                                        
+[257] NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+[261] AvgAge                                         MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents
+[265] MaxAge                                         AvgAge                                         avgParentChangeSize                            MaxAge                                        
+[269] AvgAge                                         numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3    
+[273] AvgAge                                         MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                        
+[277] MaxAge                                         AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                        
+[281] AvgAge                                         avgParentChangeSize                            MaxAge                                         AvgAge                                        
+[285] numChangeOperations                            MaxAge                                         NumModifiedDefinitionOnDefinitionParentsD3     AvgAge                                        
+[289] MaxAge                                         NumGlobalModifiedDefinitionOnDefinitionParents AvgAge                                         MaxAge                                        
+[293] AvgAge                                         NumGlobalModifiedDefinitionOnDefinitionParents MaxAge                                         AvgAge                                        
+[297] avgParentChangeSize                            MaxAge                                         AvgAge                                         numChangeOperations                           
+Levels: AvgAge AvgLastModified avgParentChangeSize MaxAge numChangeOperations NumGlobalModifiedDefinitionOnDefinitionParents NumModifiedDefinitionOnDefinitionParentsD3 NumParents_depth_3
+> p <- ggplot(t,aes(factor(factor),MeanDecreaseGini))
+> p + geom_boxplot() 
+> p + geom_boxplot() + opts(axis.text.x=theme_text(angle=-90, hjust=0))
+> 
+> p + geom_boxplot() + opts(axis.text.x=theme_text(angle=45, hjust=0))
+> p + geom_boxplot() + opts(axis.title.x = theme_text(vjust = 0))
+> p + geom_boxplot() + opts(axis.text.x=theme_text(angle=90, hjust=10))
